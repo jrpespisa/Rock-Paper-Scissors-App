@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MMORPS</title>
+  </head>
+  <body>
+    <h1>MMORPS</h1>
+    <h5>Player | Score</h5>
+    <h6>Human&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%="#{session[:player_score]}"%></h6>
+    <h6>CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%="#{session[:cpu_score]}"%></h6>
+    <h6><%=@message%></h6>
+
+  <form action="/result" method="post">
+    <input type="submit" name="again" value="Let's Do This!">
+  </form>
+  </body>
+</html>
